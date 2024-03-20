@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+h1 {
+  font-family: 'Lobster', cursive;
+
+}
+
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #615dad, #ffc8da);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.background-blue {
+  background-color: #283e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+
+}
+.container {
+  display:flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+
+
+.tlacitka {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  color: #ffffff;
+}
+
+
+.tlacitko1 {
+  background-color: #1fcca4;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tkacitko1:hover {
+  background-color: #1cbb96;
+}
+
+.tlacitko2 {
+  background-color: #0197f6;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  width: 100%;
+ 
+}
+.tlacitko2:hover {
+  background-color:#0090e9 ;
+}
+
+
+.center {
+  width: 50%;
+  margin: 0 auto;
+}
