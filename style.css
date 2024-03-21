@@ -1,18 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-h1 {
-  font-family: 'Lobster', cursive;
 
+
+
+body {
+  display:flex;
+  flex-direction: row;
+  color: #ffffff;
 }
 
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
 
 .img {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
+
+
 .gradient {
   display: flex;
   justify-content: center;
@@ -30,48 +46,47 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
-
+  width: 30%;
 }
-.container {
-  display:flex;
-  flex-direction: row;
-  color: #ffffff;
-}
-
 
 .tlacitka {
   text-align: center;
   margin-top: 20px;
   width: 100%;
-  color: #ffffff;
 }
-
 
 .tlacitko1 {
   background-color: #1fcca4;
+  color: #ffffff;
+  text-decoration: none;
   display: block;
+  line-height: 40px;
   width: fit-content;
   margin: 0 auto;
   width: 100%;
+  height: 40px;
+  margin-bottom: 2px;
 }
 
-.tkacitko1:hover {
+.tlacitko1:hover {
   background-color: #1cbb96;
 }
 
 .tlacitko2 {
   background-color: #0197f6;
+  color: #ffffff;
+  text-decoration: none;
   display: block;
+  line-height: 40px;
   width: fit-content;
   margin: 0 auto;
   width: 100%;
+  height: 40px;
  
 }
 .tlacitko2:hover {
   background-color:#0090e9 ;
 }
-
 
 .center {
   width: 50%;
