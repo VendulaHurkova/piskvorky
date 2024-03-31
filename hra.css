@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 60pt;
+  margin-left: 22px;
+  text-align: center;
+}
+
+.image-circle {
+  margin-left: 5px;
+}
+
+
+.obrazovka {
+  border-collapse: collapse;
+  max-width: 80vmin;
+  width: 100%;
+  /* max-width: 80vmin;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; */
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #615dad, #ffc8da);
+  height: 100%;
+}
+
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  margin-bottom: 2%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+/* .circle {
+  margin-right: 20px;
+} */
+
+.buttonHome {
+  background-color: #1fcca4;
+  /* height: 50px;
+  width: 50px; */
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-right: 1%;
+}
+
+.buttonHome:hover {
+  background-color: green;
+}
+
+.buttonRestart {
+  background-color: blue;
+  /* height: 50px;
+  width: 50px; */
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-left: 1%;
+}
+
+.buttonRestart:hover {
+  background-color: darkblue;
+}
+
+
+.play-table {
+  border-collapse: collapse;
+}
+
+
+.play-table td {
+  width: 45px;
+  height: 45px;
+  border: 2px solid black;
+}
+
+.play-table td:hover {
+  background-color: lightgray;
+}
+
+
+.play-table button {
+  border: 0%;
+  outline: 0%;
+  background-color: transparent;
+  border: 0;
+  transition: background: 0.3s ease;
+  cursor: pointer;
+}
