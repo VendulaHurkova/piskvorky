@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hra</title>
   <link rel="stylesheet" href="hra.css">
+  <script type="module" src="hra.js"></script>
 </head>
 <body>
   <header>
@@ -14,9 +15,9 @@
       <div class="info">
       <p> HRAJE:</p>
       <div class="image-circle">
-      <img class="img" src="obrázky/circle.svg" alt="circle"/>
-      
-    </div>
+        <img class="visible" id="imgCircle" src="obrázky/circle.svg" alt="circle"/>
+        <img class="invisible" id="imgCross" src="obrázky/cross.svg" alt="cross"/>  
+      </div>
     </div>
       <div class="buttons">
         <div class="buttonHome">
@@ -25,7 +26,7 @@
         </div>
       </a>
       <div class="buttonRestart">
-        <a href="hra.html">
+        <a href="hra.html" id="buttonRestart">
         <img class="img" src="obrázky/restart.svg" alt="restart"/>
       </div>
       </div>
@@ -34,8 +35,8 @@
   <table class="play-table">
     <tbody>
       <tr>
-        <td><button></button></td><td><button></button></td><td><button></button></td><td><button></button></td><td><button></button></td>
-        <td><button></button></td><td><button></button></td><td><button></button></td><td><button></button></td><td><button></button></td>
+        <td><button id="button0"/></td><td><button id="button1"/></td><td><button id="button2"/></td><td><button id="button3"/><td><button id="button4"/></td>
+        <td><button id="button5"/><td><button id="button6"/></td><td><button id="button7"/></td><td><button id="button8"/></td><td><button id="button9"/></td>
       </tr>
       <tr>
         <td><button></button></td><td><button></button></td><td><button></button></td><td><button></button></td><td><button></button></td>
