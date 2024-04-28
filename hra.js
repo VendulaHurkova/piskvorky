@@ -29,19 +29,38 @@ const showCross = () => {
 
 const checkGameState = () => {
   const result = findWinner(gameBoard);
-  if(result != null) {
+  if (result != null) {
     let endGameNote = '';
     if (result === 'x' || result == 'o') {
-      endGameNote = `Vyhrál hráč se symbolem ${result}.`
+      endGameNote = `Vyhrál hráč se symbolem ${result}.`;
+    } else if (result === 'tie') {
+      endGameNote = 'Hra skončila nerozhodně.';
     }
-    else if (result === 'tie') {
-      endGameNote = 'Hra skončila nerozhodně.'
-    }
-    setTimeout(function() {
+    setTimeout(() => {
       alert(endGameNote);
       location.reload();
     }, 100);
   }
+};
+
+const oponentMove = async () => {
+  const response = await fetch(
+    'https://piskvorky.czechitas-podklady.cz/api/suggest-next-move',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        board: gameBoard,
+        player: 'x',
+      }),
+    },
+  );
+  const coordinates = await response.json();
+  const index = coordinates.position.x + coordinates.position.y * 10;
+  const button = document.querySelector('#button' + index);
+  button.click();
 };
 
 const onButtonClick = (event) => {
@@ -57,6 +76,7 @@ const onButtonClick = (event) => {
     gameBoard[buttonIndex] = 'o';
     currentPlayer = 'cross';
     showCross();
+    oponentMove();
   }
   button.disabled = true;
   checkGameState();
